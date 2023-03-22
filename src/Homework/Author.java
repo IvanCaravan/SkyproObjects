@@ -30,7 +30,6 @@ public class Author {
         Author a1 = (Author) other;
         return firstName.equals(a1.firstName);
     }
-
     @Override
     public int hashCode() {
         return java.util.Objects.hash(firstName);

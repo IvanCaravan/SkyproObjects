@@ -7,5 +7,5 @@ public class Main {
        Author fedor = new Author("Фёдор", "Достоевский");
        Book warAndPeace = new Book("Война и Мир", 1863, leo);
        Book idiot = new Book("Идиот", 1867, fedor);
-   }
+    }
 }

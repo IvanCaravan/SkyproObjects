@@ -21,7 +21,5 @@ public class App {
         Book b = new Book("Коровы", 2004, a);
         Book b1 = new Book("Коровы", 2004, a1);
         System.out.println(b.equals(b1));
-
-
     }
 }
