@@ -21,7 +21,6 @@ public class Author {
     public String toString() {
         return firstName + " " + surName;
     }
-
     @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
