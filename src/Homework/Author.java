@@ -27,9 +27,6 @@ public class Author {
         if (this.getClass() != other.getClass()) {
             return false;
         }
-        if (other == this) {
-            return true;
-        }
         Author author1 = (Author) other;
         return firstName.equals(author1.firstName) && surName.equals(author1.surName);
     }

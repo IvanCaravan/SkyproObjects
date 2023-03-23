@@ -29,9 +29,6 @@ public class Book {
         if (this.getClass() != other.getClass()) {
             return false;
         }
-        if (other == this) {
-            return true;
-        }
         Book b1 = (Book) other;
         return name.equals(b1.name) && this.year == b1.year && this.author.equals(b1.author);
     }
