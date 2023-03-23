@@ -19,20 +19,5 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
-    @Override
-    public String toString() {
-        return name + " " + year + " " + author;
-    }
-    @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Book b1 = (Book) other;
-        return name.equals(b1.name);
-    }
-    @Override
-    public int hashCode() {
-        return java.util.Objects.hash(name);
-    }
+
 }
