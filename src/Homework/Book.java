@@ -30,10 +30,12 @@ public class Book {
             return false;
         }
         Book b1 = (Book) other;
-        return name.equals(b1.name);
+        return name.equals(b1.name) && this.year == b1.year && this.author.equals(b1.author);
     }
+
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name);
+        return java.util.Objects.hash(name, year, author);
     }
+
 }

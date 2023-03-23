@@ -1,5 +1,6 @@
 package Homework;
 
+
 public class Author {
     private String firstName;
     private String surName;
@@ -21,17 +22,16 @@ public class Author {
     public String toString() {
         return firstName + " " + surName;
     }
-
     @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
         }
-        Author a1 = (Author) other;
-        return firstName.equals(a1.firstName);
+        Author author1 = (Author) other;
+        return firstName.equals(author1.firstName) && surName.equals(author1.surName);
     }
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(firstName);
+        return java.util.Objects.hash(firstName, surName);
     }
 }

@@ -10,16 +10,17 @@ public class App {
         System.out.println("Книга " + idiot.getName() + idiot.getYear() + fedor.getFirstName() + fedor.getSurName());
         idiot.setYear(1870);
         System.out.println(idiot.getYear());
+
         // Задание с методами объектов:
         Author alex = new Author("Александр", "Беляев");
         System.out.println(new Book("Человек-амфибия", 1928, alex));
 
-        Author a = new Author("Мэтью", "Стокоу");
-        Author a1 = new Author("Мэтью", "Петров");
-        System.out.println(a.equals(a1));
+        Author author = new Author("Мэтью", "Стокоу");
+        Author author1 = new Author("Мэтью", "Стокоу");
+        System.out.println(author.equals(author1));
 
-        Book b = new Book("Коровы", 2004, a);
-        Book b1 = new Book("Коровы", 2004, a1);
+        Book b = new Book("Коровы", 2004, author);
+        Book b1 = new Book("Коровы", 2004, author1);
         System.out.println(b.equals(b1));
-    }
+     }
 }
