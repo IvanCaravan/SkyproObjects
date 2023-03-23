@@ -11,5 +11,16 @@ public class App {
         idiot.setYear(1870);
         System.out.println(idiot.getYear());
 
+        // Задание с методами объектов:
+        Author alex = new Author("Александр", "Беляев");
+        System.out.println(new Book("Человек-амфибия", 1928, alex));
+
+        Author author = new Author("Мэтью", "Стокоу");
+        Author author1 = new Author("Мэтью", "Стокоу");
+        System.out.println(author.equals(author1));
+
+        Book b = new Book("Коровы", 2004, author);
+        Book b1 = new Book("Коровы", 2004, author1);
+        System.out.println(b.equals(b1));
      }
 }

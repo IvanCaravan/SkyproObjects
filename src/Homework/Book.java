@@ -20,4 +20,25 @@ public class Book {
         this.year = year;
     }
 
+    @Override
+    public String toString() {
+        return name + " " + year + " " + author;
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        if (other == this) {
+            return true;
+        }
+        Book b1 = (Book) other;
+        return name.equals(b1.name) && this.year == b1.year && this.author.equals(b1.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, year, author);
+    }
+
 }
